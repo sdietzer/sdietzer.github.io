@@ -4,6 +4,7 @@ date: 2022-04-08T23:24:28-04:00
 draft: false
 ---
  
+
 create a virtual environment in current directory
 ```python
 python -m venv my_venv
@@ -34,11 +35,20 @@ clear an existing virtual environment
 python -m venv --clear path/to/my_venv
 ```
 
+update python version in a virtual environment
+```python
+python -m venv /path/to/my_venv --upgrade
+```
 
+give virtual environment access to system site-packages
+```python
+python -m venv /path/to/my_venv --system-site-packages
+```
 
-
-
-
+skip pip installation and/or upgrade
+```python
+python -m vevn /path/to/my_venv --without-pip
+```
 
 
 
