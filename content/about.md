@@ -20,7 +20,11 @@ menu:
   #   weight: 10
 ---
 
-Shawn Dietzer - Beginner Blockchain Developer
+# Shawn Dietzer 
+
+* Intermediate Level Python Developer
+* Beginner Level Blockchain Developer
+* Expert Level Systems Engineer
 
 
 
