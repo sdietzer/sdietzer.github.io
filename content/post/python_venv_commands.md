@@ -12,7 +12,7 @@ python -m venv my_venv
 
 create a virtual environment in a specific dirctory
 ```python
-python3 -m venv path/to/your/venv/my_venv
+python -m venv path/to/your/venv/my_venv
 ```
 
 activate a virtual environment using powershell from the venv/scripts folder
