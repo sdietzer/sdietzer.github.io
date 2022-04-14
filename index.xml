@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shawn Dietzer - Tech Blog</title><link>https://sdietzer.github.io/</link><description>Shawn Dietzer - Tech Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 11 Apr 2022 17:45:10 -0400</lastBuildDate><atom:link href="https://sdietzer.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>python_code_snippets</title><link>https://sdietzer.github.io/post/python_code_snippets/</link><pubDate>Mon, 11 Apr 2022 17:45:10 -0400</pubDate><guid>https://sdietzer.github.io/post/python_code_snippets/</guid><description>&lt;p>cache decorator&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shawn Dietzer - Tech Blog</title><link>https://sdietzer.github.io/</link><description>Shawn Dietzer - Tech Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 11 Apr 2022 17:45:10 -0400</lastBuildDate><atom:link href="https://sdietzer.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>python_code_snippets</title><link>https://sdietzer.github.io/post/python_code_snippets/</link><pubDate>Mon, 11 Apr 2022 17:45:10 -0400</pubDate><guid>https://sdietzer.github.io/post/python_code_snippets/</guid><description>&lt;p>cache decorator - increase speed of math calculations&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">from&lt;/span> functools &lt;span style="color:#f92672">import&lt;/span> cache, lru_cache
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
@@ -17,10 +17,52 @@
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">if&lt;/span> __name__ &lt;span style="color:#f92672">==&lt;/span> &lt;span style="color:#e6db74">&amp;#39;__main__&amp;#39;&lt;/span>:
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> main()
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>test function&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">def&lt;/span> &lt;span style="color:#a6e22e">myfunc&lt;/span>(a,b):
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">if&lt;/span> a&lt;span style="color:#f92672">&amp;gt;&lt;/span>b:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> print (&lt;span style="color:#e6db74">&amp;#34;It worked&amp;#34;&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">else&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> print (&lt;span style="color:#e6db74">&amp;#34;No&amp;#34;&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>myfunc(&lt;span style="color:#ae81ff">2&lt;/span>,&lt;span style="color:#ae81ff">1&lt;/span>)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>if_else&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>hungry &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#66d9ef">True&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">if&lt;/span> hungry:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> print(&lt;span style="color:#e6db74">&amp;#39;FEED ME NOW!&amp;#39;&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">else&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> print(&lt;span style="color:#e6db74">&amp;#34;I&amp;#39;M NOT HUNGRY!!!&amp;#34;&lt;/span>)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>if_elif_else&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>loc &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#e6db74">&amp;#39;Store&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">if&lt;/span> loc &lt;span style="color:#f92672">==&lt;/span> &lt;span style="color:#e6db74">&amp;#39;Auto Shop&amp;#39;&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> print(&lt;span style="color:#e6db74">&amp;#34;Cars are cool!!!&amp;#34;&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">elif&lt;/span> loc &lt;span style="color:#f92672">==&lt;/span> &lt;span style="color:#e6db74">&amp;#39;Bank&amp;#39;&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> print(&lt;span style="color:#e6db74">&amp;#39;Money is cool!!!&amp;#39;&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">elif&lt;/span> loc &lt;span style="color:#f92672">==&lt;/span> &lt;span style="color:#e6db74">&amp;#39;Store&amp;#39;&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> print(&lt;span style="color:#e6db74">&amp;#39;Welcome to the store!&amp;#39;&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">else&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> print(&lt;span style="color:#e6db74">&amp;#34;I do not know much&amp;#34;&lt;/span>)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>if_elif_else&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>loc &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#e6db74">&amp;#39;Store&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">if&lt;/span> loc &lt;span style="color:#f92672">==&lt;/span> &lt;span style="color:#e6db74">&amp;#39;Auto Shop&amp;#39;&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> print(&lt;span style="color:#e6db74">&amp;#34;Cars are cool!!!&amp;#34;&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">elif&lt;/span> loc &lt;span style="color:#f92672">==&lt;/span> &lt;span style="color:#e6db74">&amp;#39;Bank&amp;#39;&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> print(&lt;span style="color:#e6db74">&amp;#39;Money is cool!!!&amp;#39;&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">elif&lt;/span> loc &lt;span style="color:#f92672">==&lt;/span> &lt;span style="color:#e6db74">&amp;#39;Store&amp;#39;&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> print(&lt;span style="color:#e6db74">&amp;#39;Welcome to the store!&amp;#39;&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">else&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> print(&lt;span style="color:#e6db74">&amp;#34;I do not know much&amp;#34;&lt;/span>)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>get ip address&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">import&lt;/span> requests
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>response &lt;span style="color:#f92672">=&lt;/span> requests&lt;span style="color:#f92672">.&lt;/span>get(&lt;span style="color:#e6db74">&amp;#39;https://httpbin.org/ip&amp;#39;&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>print(&lt;span style="color:#e6db74">&amp;#39;Your IP is &lt;/span>&lt;span style="color:#e6db74">{0}&lt;/span>&lt;span style="color:#e6db74">&amp;#39;&lt;/span>&lt;span style="color:#f92672">.&lt;/span>format(response&lt;span style="color:#f92672">.&lt;/span>json()[&lt;span style="color:#e6db74">&amp;#39;origin&amp;#39;&lt;/span>]))
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>portfolio</title><link>https://sdietzer.github.io/portfolio/</link><pubDate>Sun, 10 Apr 2022 00:00:00 +0000</pubDate><guid>https://sdietzer.github.io/portfolio/</guid><description>&lt;p>shawn dietzer - portfolio&lt;/p></description></item><item><title>python venv commands</title><link>https://sdietzer.github.io/post/python_venv_commands/</link><pubDate>Fri, 08 Apr 2022 23:24:28 -0400</pubDate><guid>https://sdietzer.github.io/post/python_venv_commands/</guid><description>&lt;p>create a virtual environment in current directory&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>python &lt;span style="color:#f92672">-&lt;/span>m venv my_venv
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>create a virtual environment in a specific dirctory&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>python3 &lt;span style="color:#f92672">-&lt;/span>m venv path&lt;span style="color:#f92672">/&lt;/span>to&lt;span style="color:#f92672">/&lt;/span>your&lt;span style="color:#f92672">/&lt;/span>venv&lt;span style="color:#f92672">/&lt;/span>my_venv
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>python &lt;span style="color:#f92672">-&lt;/span>m venv path&lt;span style="color:#f92672">/&lt;/span>to&lt;span style="color:#f92672">/&lt;/span>your&lt;span style="color:#f92672">/&lt;/span>venv&lt;span style="color:#f92672">/&lt;/span>my_venv
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>activate a virtual environment using powershell from the venv/scripts folder&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-powershell" data-lang="powershell">&lt;span style="display:flex;">&lt;span>./Activate.ps1
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>deactivate a virtual environment using powershell from the venv/scripts folder&lt;/p>
@@ -576,4 +618,14 @@ cursor: pointer;
 &lt;p>&lt;strong>N.B.&lt;/strong> The above steps enable Unicode Standard emoji characters and sequences in Hugo, however the rendering of these glyphs depends on the browser and the platform. To style the emoji you can either use a third party emoji font or a font stack; e.g.&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-html" data-lang="html">&lt;span style="display:flex;">&lt;span>.emoji {
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>font-family: Apple Color Emoji,Segoe UI Emoji,NotoColorEmoji,Segoe UI Symbol,Android Emoji,EmojiSymbols;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Subpage</title><link>https://sdietzer.github.io/about/subpage/</link><pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate><guid>https://sdietzer.github.io/about/subpage/</guid><description>&lt;p>Just a subpage of About.&lt;/p></description></item><item><title>about Me</title><link>https://sdietzer.github.io/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sdietzer.github.io/about/</guid><description>&lt;p>Shawn Dietzer - Beginner Blockchain Developer&lt;/p></description></item></channel></rss>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Subpage</title><link>https://sdietzer.github.io/about/subpage/</link><pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate><guid>https://sdietzer.github.io/about/subpage/</guid><description>&lt;p>Just a subpage of About.&lt;/p></description></item><item><title>about Me</title><link>https://sdietzer.github.io/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sdietzer.github.io/about/</guid><description>&lt;h1 id="shawn-dietzer" >Shawn Dietzer
+&lt;span>
+&lt;a href="#shawn-dietzer">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;ul>
+&lt;li>Intermediate Level Python Developer&lt;/li>
+&lt;li>Beginner Level Blockchain Developer&lt;/li>
+&lt;li>Expert Level Systems Engineer&lt;/li>
+&lt;/ul></description></item></channel></rss>
